@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        localStorage.setItem("name", "이정환");
+        // =>로컬스토리지에 값을 저장함 
+
+        const get_name = localStorage.getItem("name");
+        // =>로컬스토리지에 key값을 가져옴
+
+        document.write(get_name);
+
+    </script>
+
+</body>
+</html>

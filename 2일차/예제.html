@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        // 1.프롬프트로 이름을 입력받음
+        // 2.입력받은 이름을 로컬스토리지에 저장 
+        // 3.저장된 로컬스토리지 값을 브라우저에 출력
+
+        const input_name = prompt("이름을 입력해주세요");
+
+        localStorage.setItem("name", input_name);
+        const get_name = localStorage.getItem("name");
+
+        document.write(get_name + "님 환영합니다.");
+
+        
+
+    </script>
+
+</body>
+</html>
